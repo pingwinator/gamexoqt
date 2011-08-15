@@ -1,5 +1,9 @@
-#include <iostream>
+
+#include <numeric>
+#include <algorithm>
+#include <map>
 #include <string>
+#include <iostream>
 #include <cstdlib>
 
 #ifndef VALUES_H

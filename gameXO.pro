@@ -19,10 +19,12 @@ SOURCES += main.cpp \
     player.cpp \
     humanplayer.cpp \
     randomplayer.cpp \
-    values.cpp
+    values.cpp \
+    smartplayer.cpp
 
 HEADERS += \
     player.h \
     humanplayer.h \
     randomplayer.h \
-    values.h
+    values.h \
+    smartplayer.h
