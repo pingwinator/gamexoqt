@@ -16,7 +16,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    player.cpp
+    player.cpp \
+    humanplayer.cpp
 
 HEADERS += \
-    player.h
+    player.h \
+    humanplayer.h
