@@ -1,27 +1,27 @@
-#include <QtCore/QCoreApplication>
-#pragma once
-/*
 #include <iostream>
-#include <iomanip>
-#include <stdlib.h>
-#include <stdio.h>
-#include <map>
-#include <vector>
-#include <stack>
-#include <numeric>
-//#include <array>
+#include <string>
 #include <cstdlib>
-#include<QList>
+
+#ifndef VALUES_H
+#define VALUES_H
+
+using namespace std;
 #define InitWeight 100//weight for begin
 #define PrecCoeff 50//accuracy of generator
 #define StepCoeff 0.65//"learning koefficient"
 #define LearningStep 20
 
-using namespace std;
+
 static char GameField[9];
 
 enum OUTCOME { Xs, Os, DRAW, UNFINISHED };
-
+/*
+        current state of game:
+        won "x" -> Xs
+        won "x" -> Os
+        draw -> DRAW
+        unfinished -> UNFINISHED
+*/
 struct TField//
 {
         char Field[9];
@@ -38,7 +38,8 @@ struct TWeight
         int Weight[9];
         TWeight(){ fill(Weight, Weight+9, InitWeight);}
 };
-
+void PrintField();
+/*
         //current stage of game field
 void PrintField()
 {
@@ -47,8 +48,9 @@ void PrintField()
         cout << GameField[6] << "|" << GameField[7] << "|" << GameField[8] << endl;
         cout << endl;
 }
-
-
+*/
+OUTCOME GetOutCome();
+/*
 OUTCOME GetOutCome()
 {
         //position to win
@@ -65,9 +67,4 @@ OUTCOME GetOutCome()
         return (find(GameField, GameField+9, ' ') == GameField +9) ? DRAW : UNFINISHED;
 };
 */
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
-}
+#endif // VALUES_H
