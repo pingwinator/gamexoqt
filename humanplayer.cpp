@@ -4,6 +4,6 @@
 void HumanPlayer :: MakeMove()
 {
         int Cell = 0;
-       std::cin >> Cell;
+        std::cin >> Cell;
        // GameField[Cell] = Symbol;
 };

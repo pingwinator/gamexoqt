@@ -17,8 +17,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     player.cpp \
-    humanplayer.cpp
+    humanplayer.cpp \
+    randomplayer.cpp
 
 HEADERS += \
     player.h \
-    humanplayer.h
+    humanplayer.h \
+    randomplayer.h
